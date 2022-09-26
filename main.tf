@@ -5,7 +5,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "diegoaceneves-tfstate"
+    bucket = "diegoaceneves-tfstates"
     key    = "iac.tfstate"
     region = "us-east-1"
   }
