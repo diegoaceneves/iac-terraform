@@ -29,10 +29,10 @@ variable "cf_record_name" {
 
 variable "cf_record_type" {
   type = string
-  default = "CNAME"
+  default = "A"
 }
 
 variable "cf_proxied" {
   type = bool
-  default = true
+  default = false
 }
