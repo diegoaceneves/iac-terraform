@@ -6,12 +6,12 @@ data "aws_ami" "ubuntu" {
     values = ["Einstein*"]
   }
 
-  owners = ["465641079673"] # My Account ID
+  owners = [var.aws_account_owner] # My Account ID
 }
 
 resource "aws_instance" "web" {
   ami           = data.aws_ami.ubuntu.id
-  instance_type = "t2.micro"
+  instance_type = var.aws_instance_type
 
   tags = {
     Name = "Einstein"
