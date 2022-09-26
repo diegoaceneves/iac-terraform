@@ -8,10 +8,6 @@ variable "aws_instance_type" {
   default = "t2.micro"
 }
 
-variable "cf_email" {
-  type = string
-}
-
 variable "cf_token" {
   type = string
 }
