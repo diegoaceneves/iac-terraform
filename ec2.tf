@@ -3,10 +3,10 @@ data "aws_ami" "ubuntu" {
 
   filter {
     name   = "name"
-    values = ["IaC - Talks*"]
+    values = ["Einstein*"]
   }
 
-  owners = ["763602783158"] # My Account ID
+  owners = ["465641079673"] # My Account ID
 }
 
 resource "aws_instance" "web" {
@@ -14,6 +14,6 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "IaC Talks"
+    Name = "Einstein"
   }
 }
