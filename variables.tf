@@ -5,7 +5,7 @@ variable "aws_account_owner" {
 
 variable "aws_instance_type" {
   type = string
-  default = "t3.micro"
+  default = "t2.micro"
 }
 
 variable "cf_token" {
