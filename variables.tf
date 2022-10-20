@@ -24,7 +24,7 @@ variable "cf_domain" {
 
 variable "cf_record_name" {
   type = string
-  default = "iac"
+  default = "iac2"
 }
 
 variable "cf_record_type" {

@@ -15,5 +15,6 @@ resource "aws_instance" "web" {
 
   tags = {
     Name = "Einstein"
+    CC = "01012521"
   }
 }
